@@ -1,0 +1,21 @@
+# macOS system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Node modules (if ever used for tooling)
+node_modules/
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Python cache (if local server is used)
+__pycache__/
+
+# Ignore build output (not used, but safe for future)
+dist/
+build/
+
+# Do NOT ignore any HTML, CSS, or assets needed for GitHub Pages
