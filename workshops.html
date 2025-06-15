@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops - Vibe Coders</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    .workshops-section {
+      max-width: 1100px;
+      margin: 3rem auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      padding: 2.5rem 2rem;
+    }
+    .workshop-list {
+      margin-bottom: 3rem;
+    }
+    .workshop-title {
+      color: var(--primary);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+    .features-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: var(--bg-light);
+      border-radius: 6px;
+      padding: 1.2rem 1rem;
+      box-shadow: 0 2px 8px rgba(90,103,216,0.04);
+    }
+    .feature-icon {
+      font-size: 2rem;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+    .screenshot {
+      margin: 2.5rem 0 2rem 0;
+      text-align: center;
+    }
+    .screenshot img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+      border: 1px solid #e2e8f0;
+    }
+    .exercise {
+      background: var(--bg-light);
+      border-radius: 6px;
+      padding: 1.5rem 1rem;
+      margin-top: 2.5rem;
+      box-shadow: 0 2px 8px rgba(237,100,166,0.06);
+    }
+    @media (min-width: 700px) {
+      .features-list {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Vibe Coders</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="workshops.html">Workshops</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="replit-workshop.html">Replit</a></li>
+        <li><a href="windsurf.html">Windsurf</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="workshops-section workshop-list">
+      <h1 class="workshop-title">Workshops</h1>
+      <p style="font-size:1.1rem;">Explore our hands-on workshops. More coming soon!</p>
+
+      <!-- Cursor Workshop Section -->
+      <section class="workshop-section" id="cursor-workshop">
+        <h2 style="color:var(--primary);font-weight:800;">Cursor.dev Workshop</h2>
+        <p style="font-size:1.2rem;">Discover the power of Cursor.dev for collaborative, real-time coding and seamless project management.</p>
+
+        <h3>Key Features</h3>
+        <div class="features-list">
+          <div class="feature">
+            <span class="feature-icon">⚡</span>
+            <div>
+              <h4>Real-time Collaboration</h4>
+              <p>Work together with your team instantly—see edits live, chat, and code as a group in the same workspace.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">👀</span>
+            <div>
+              <h4>Live Preview</h4>
+              <p>Preview your web projects as you code, with automatic updates and no need to refresh or redeploy.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon">🔗</span>
+            <div>
+              <h4>Seamless Git Integration</h4>
+              <p>Connect to GitHub, manage branches, and commit changes directly from the Cursor.dev interface.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="screenshot">
+          <h3>Open Folder Flow</h3>
+          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Cursor.dev open folder screenshot">
+          <p style="margin-top:0.5rem;color:#888;">Screenshot: Opening a project folder in Cursor.dev</p>
+        </div>
+
+        <div class="exercise">
+          <h3>Styling Exercise</h3>
+          <ol>
+            <li>Pair up with a partner in Cursor.dev.</li>
+            <li>Together, create or open an <b>index.html</b> file.</li>
+            <li>Design and style a modern hero section using <b>CSS</b> (try gradients, big headings, and a call-to-action button).</li>
+            <li>Use the live preview to see your changes instantly.</li>
+            <li>Commit and push your changes to GitHub when finished.</li>
+          </ol>
+        </div>
+      </section>
+      <!-- Add more workshop sections here in the future -->
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Vibe Coders • Hosted on GitHub Pages</p>
+  </footer>
+</body>
+</html> 
