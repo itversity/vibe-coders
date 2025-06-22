@@ -74,11 +74,16 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="workshops.html">Workshops</a></li>
+        <li class="dropdown">
+          <a href="workshops.html" class="dropdown-toggle">Workshops</a>
+          <ul class="dropdown-menu">
+            <li><a href="cursor-workshop.html">Cursor.dev</a></li>
+            <li><a href="replit-workshop.html">Replit</a></li>
+            <li><a href="windsurf-workshop.html">Windsurf</a></li>
+          </ul>
+        </li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="replit-workshop.html">Replit</a></li>
-        <li><a href="windsurf.html">Windsurf</a></li>
       </ul>
     </nav>
   </header>
@@ -86,56 +91,34 @@
   <main>
     <section class="workshops-section workshop-list">
       <h1 class="workshop-title">Workshops</h1>
-      <p style="font-size:1.1rem;">Explore our hands-on workshops. More coming soon!</p>
+      <p style="font-size:1.2rem;margin-bottom:3rem;">Explore our hands-on coding workshops designed for high school students. Each workshop focuses on practical skills and collaborative learning.</p>
 
-      <!-- Cursor Workshop Section -->
-      <section class="workshop-section" id="cursor-workshop">
-        <h2 style="color:var(--primary);font-weight:800;">Cursor.dev Workshop</h2>
-        <p style="font-size:1.2rem;">Discover the power of Cursor.dev for collaborative, real-time coding and seamless project management.</p>
-
-        <h3>Key Features</h3>
-        <div class="features-list">
-          <div class="feature">
-            <span class="feature-icon">⚡</span>
-            <div>
-              <h4>Real-time Collaboration</h4>
-              <p>Work together with your team instantly—see edits live, chat, and code as a group in the same workspace.</p>
-            </div>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">👀</span>
-            <div>
-              <h4>Live Preview</h4>
-              <p>Preview your web projects as you code, with automatic updates and no need to refresh or redeploy.</p>
-            </div>
-          </div>
-          <div class="feature">
-            <span class="feature-icon">🔗</span>
-            <div>
-              <h4>Seamless Git Integration</h4>
-              <p>Connect to GitHub, manage branches, and commit changes directly from the Cursor.dev interface.</p>
-            </div>
+      <div class="features-list">
+        <div class="feature">
+          <span class="feature-icon">🖱️</span>
+          <div>
+            <h3><a href="cursor-workshop.html" style="color:var(--primary);text-decoration:none;">Cursor.dev Workshop</a></h3>
+            <p>Learn collaborative coding with real-time editing, live preview, and seamless Git integration.</p>
+            <a href="cursor-workshop.html" class="button" style="margin-top:1rem;">Start Workshop</a>
           </div>
         </div>
-
-        <div class="screenshot">
-          <h3>Open Folder Flow</h3>
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Cursor.dev open folder screenshot">
-          <p style="margin-top:0.5rem;color:#888;">Screenshot: Opening a project folder in Cursor.dev</p>
+        <div class="feature">
+          <span class="feature-icon">⚡</span>
+          <div>
+            <h3><a href="replit-workshop.html" style="color:var(--primary);text-decoration:none;">Replit Workshop</a></h3>
+            <p>Spin up live code in seconds with Replit's cloud-based development environment.</p>
+            <a href="replit-workshop.html" class="button" style="margin-top:1rem;">Start Workshop</a>
+          </div>
         </div>
-
-        <div class="exercise">
-          <h3>Styling Exercise</h3>
-          <ol>
-            <li>Pair up with a partner in Cursor.dev.</li>
-            <li>Together, create or open an <b>index.html</b> file.</li>
-            <li>Design and style a modern hero section using <b>CSS</b> (try gradients, big headings, and a call-to-action button).</li>
-            <li>Use the live preview to see your changes instantly.</li>
-            <li>Commit and push your changes to GitHub when finished.</li>
-          </ol>
+        <div class="feature">
+          <span class="feature-icon">🌊</span>
+          <div>
+            <h3><a href="windsurf-workshop.html" style="color:var(--primary);text-decoration:none;">Windsurf Workshop</a></h3>
+            <p>Master Git, GitHub, and deployment workflows with Windsurf CLI tools.</p>
+            <a href="windsurf-workshop.html" class="button" style="margin-top:1rem;">Start Workshop</a>
+          </div>
         </div>
-      </section>
-      <!-- Add more workshop sections here in the future -->
+      </div>
     </section>
   </main>
 

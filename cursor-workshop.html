@@ -66,11 +66,16 @@
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="workshops.html">Workshops</a></li>
+        <li class="dropdown">
+          <a href="workshops.html" class="dropdown-toggle">Workshops</a>
+          <ul class="dropdown-menu">
+            <li><a href="cursor-workshop.html">Cursor.dev</a></li>
+            <li><a href="replit-workshop.html">Replit</a></li>
+            <li><a href="windsurf-workshop.html">Windsurf</a></li>
+          </ul>
+        </li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="replit-workshop.html">Replit</a></li>
-        <li><a href="windsurf.html">Windsurf</a></li>
       </ul>
     </nav>
   </header>
@@ -78,7 +83,49 @@
   <main>
     <section class="workshop-section">
       <h1 style="color:var(--primary);font-weight:800;">Cursor.dev Workshop</h1>
-      <p style="font-size:1.2rem;">This content has moved! Please visit the <a href="workshops.html">Workshops</a> page for the Cursor.dev Workshop and more.</p>
+      <p style="font-size:1.2rem;">Discover the power of Cursor.dev for collaborative, real-time coding and seamless project management.</p>
+
+      <h3>Key Features</h3>
+      <div class="features-list">
+        <div class="feature">
+          <span class="feature-icon">⚡</span>
+          <div>
+            <h4>Real-time Collaboration</h4>
+            <p>Work together with your team instantly—see edits live, chat, and code as a group in the same workspace.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">👀</span>
+          <div>
+            <h4>Live Preview</h4>
+            <p>Preview your web projects as you code, with automatic updates and no need to refresh or redeploy.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🔗</span>
+          <div>
+            <h4>Seamless Git Integration</h4>
+            <p>Connect to GitHub, manage branches, and commit changes directly from the Cursor.dev interface.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="screenshot">
+        <h3>Open Folder Flow</h3>
+        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=800&q=80" alt="Cursor.dev open folder screenshot">
+        <p style="margin-top:0.5rem;color:#888;">Screenshot: Opening a project folder in Cursor.dev</p>
+      </div>
+
+      <div class="exercise">
+        <h3>Styling Exercise</h3>
+        <ol>
+          <li>Pair up with a partner in Cursor.dev.</li>
+          <li>Together, create or open an <b>index.html</b> file.</li>
+          <li>Design and style a modern hero section using <b>CSS</b> (try gradients, big headings, and a call-to-action button).</li>
+          <li>Use the live preview to see your changes instantly.</li>
+          <li>Commit and push your changes to GitHub when finished.</li>
+        </ol>
+      </div>
     </section>
   </main>
 
