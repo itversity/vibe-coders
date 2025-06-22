@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Replit Workshop - Vibe Coders</title>
+  <title>Windsurf Workshop - Vibe Coders</title>
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
   <style>
@@ -42,15 +42,15 @@
       margin-top: 2.5rem;
       box-shadow: 0 2px 8px rgba(237,100,166,0.06);
     }
-    .repl-container {
-      margin: 2rem 0;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-    }
-    .repl-frame {
-      width: 100%;
-      border: none;
+    .code-block {
+      background: #2d3748;
+      color: #e2e8f0;
+      padding: 1.5rem;
+      border-radius: 6px;
+      margin: 1.5rem 0;
+      font-family: 'Monaco', 'Menlo', 'Consolas', monospace;
+      font-size: 0.9rem;
+      overflow-x: auto;
     }
     @media (min-width: 700px) {
       .features-list {
@@ -82,62 +82,79 @@
 
   <main>
     <section class="workshop-section">
-      <h1 style="color:var(--primary);font-weight:800;">Replit Workshop</h1>
-      <p style="font-size:1.2rem;">Learn to code in the browser with Replit's powerful online IDE. No setup required - just open your browser and start coding!</p>
+      <h1 style="color:var(--primary);font-weight:800;">Windsurf Workshop</h1>
+      <p style="font-size:1.2rem;">Master Git, GitHub, and deployment workflows. Learn the essential tools for collaborative development and publishing your projects to the web.</p>
 
       <h3>Key Features</h3>
       <div class="features-list">
         <div class="feature">
-          <span class="feature-icon">✨</span>
+          <span class="feature-icon">🌊</span>
           <div>
-            <h4>Instant Setup</h4>
-            <p>No installation needed - just open your browser and start coding in 50+ programming languages.</p>
-          </div>
-        </div>
-        <div class="feature">
-          <span class="feature-icon">👥</span>
-          <div>
-            <h4>Real-time Collaboration</h4>
-            <p>Work together with classmates in real-time, sharing code and ideas instantly.</p>
-          </div>
-        </div>
-        <div class="feature">
-          <span class="feature-icon">📱</span>
-          <div>
-            <h4>Cross-Platform</h4>
-            <p>Works on any device with a web browser - desktop, tablet, or mobile.</p>
+            <h4>Git Version Control</h4>
+            <p>Learn to track changes, create branches, and manage your code history with Git.</p>
           </div>
         </div>
         <div class="feature">
           <span class="feature-icon">🚀</span>
           <div>
-            <h4>Instant Deployment</h4>
-            <p>Share your projects with the world instantly with built-in hosting and deployment.</p>
+            <h4>GitHub Integration</h4>
+            <p>Push your code to GitHub, collaborate with others, and manage repositories.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">📡</span>
+          <div>
+            <h4>GitHub Pages Deployment</h4>
+            <p>Deploy your static websites instantly with GitHub Pages hosting.</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">⚡</span>
+          <div>
+            <h4>CLI Workflow</h4>
+            <p>Master command-line tools for efficient development and deployment.</p>
           </div>
         </div>
       </div>
 
-      <div class="repl-container">
-        <h3>Try It Live!</h3>
-        <p>Below is an embedded Repl where you can see code running in real-time:</p>
-        <iframe 
-          src="https://replit.com/" 
-          height="400" 
-          class="repl-frame"
-          title="Replit Live Demo">
-        </iframe>
+      <h3>Essential Git Commands</h3>
+      <div class="code-block">
+# Initialize a new Git repository
+git init
+
+# Add files to staging area
+git add .
+git add filename.html
+
+# Commit changes with a message
+git commit -m "Add homepage with navigation"
+
+# Connect to remote repository
+git remote add origin https://github.com/username/repo-name.git
+
+# Push changes to GitHub
+git push -u origin main
+
+# Check repository status
+git status
+
+# View commit history
+git log --oneline
       </div>
 
       <div class="exercise">
-        <h3>Exercise: Hello, Vibe Coders!</h3>
+        <h3>Exercise: Deploy Your Project</h3>
         <ol>
-          <li>Click the "Fork" button in the Repl above</li>
-          <li>Sign in with your GitHub account (or create one)</li>
-          <li>Edit the code to display <b>"Hello, Vibe Coders!"</b> with your name</li>
-          <li>Click "Run" to see your changes</li>
-          <li>Share your Repl link with the class</li>
+          <li>Create a new repository on GitHub for your project</li>
+          <li>Initialize Git in your project folder: <code>git init</code></li>
+          <li>Add all files to staging: <code>git add .</code></li>
+          <li>Make your first commit: <code>git commit -m "Initial commit"</code></li>
+          <li>Connect to your GitHub repo: <code>git remote add origin [your-repo-url]</code></li>
+          <li>Push to GitHub: <code>git push -u origin main</code></li>
+          <li>Enable GitHub Pages in your repository settings</li>
+          <li>Visit your live site at <code>https://[username].github.io/[repo-name]</code></li>
         </ol>
-        <p><strong>💡 Tips:</strong> Try changing colors with CSS, add emojis, or experiment with different HTML tags!</p>
+        <p><strong>💡 Pro Tips:</strong> Use meaningful commit messages, commit frequently, and always test your site locally before pushing!</p>
       </div>
     </section>
   </main>

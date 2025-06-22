@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Resources - Vibe Coders</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    .contact-section {
+      max-width: 800px;
+      margin: 3rem auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      padding: 2.5rem 2rem;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+    .contact-card {
+      background: var(--bg-light);
+      border-radius: 8px;
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(90,103,216,0.04);
+    }
+    .contact-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    .resources-list {
+      list-style: none;
+      padding: 0;
+      margin: 2rem 0;
+    }
+    .resources-list li {
+      background: var(--bg-light);
+      margin: 1rem 0;
+      padding: 1rem 1.5rem;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      box-shadow: 0 2px 8px rgba(90,103,216,0.04);
+    }
+    .resources-list li::before {
+      content: '🔗';
+      font-size: 1.5rem;
+    }
+    .resources-list a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .resources-list a:hover {
+      color: var(--accent);
+    }
+    @media (min-width: 600px) {
+      .contact-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Vibe Coders</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="workshops.html" class="dropdown-toggle">Workshops</a>
+          <ul class="dropdown-menu">
+            <li><a href="cursor-workshop.html">Cursor.dev</a></li>
+            <li><a href="replit-workshop.html">Replit</a></li>
+            <li><a href="windsurf-workshop.html">Windsurf</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h1 style="color:var(--primary);font-weight:800;">Contact & Resources</h1>
+      <p style="font-size:1.2rem;">Get in touch with the Vibe Coders team and access helpful resources for your coding journey.</p>
+
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <h3>Email Us</h3>
+          <p>Have questions about workshops or need help with your projects?</p>
+          <a href="mailto:hello@vibecoders.com" class="button">Send Email</a>
+        </div>
+        
+        <div class="contact-card">
+          <div class="contact-icon">💬</div>
+          <h3>Join Discord</h3>
+          <p>Connect with other students and get real-time help from mentors.</p>
+          <a href="#" class="button">Join Community</a>
+        </div>
+      </div>
+
+      <h3>Helpful Resources</h3>
+      <ul class="resources-list">
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs - HTML</a>
+          <span>Complete HTML reference and tutorials</span>
+        </li>
+        <li>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs - CSS</a>
+          <span>CSS guides and property references</span>
+        </li>
+        <li>
+          <a href="https://javascript.info/" target="_blank">JavaScript.info</a>
+          <span>Modern JavaScript tutorial from basics to advanced</span>
+        </li>
+        <li>
+          <a href="https://git-scm.com/doc" target="_blank">Git Documentation</a>
+          <span>Official Git documentation and tutorials</span>
+        </li>
+        <li>
+          <a href="https://docs.github.com/" target="_blank">GitHub Docs</a>
+          <span>Learn GitHub features and best practices</span>
+        </li>
+        <li>
+          <a href="https://pages.github.com/" target="_blank">GitHub Pages Guide</a>
+          <span>Deploy your websites for free with GitHub Pages</span>
+        </li>
+      </ul>
+
+      <h3>Workshop Schedule</h3>
+      <div style="background:var(--bg-light);padding:1.5rem;border-radius:8px;margin:1.5rem 0;">
+        <p><strong>📅 Weekly Sessions:</strong> Saturdays 2:00 PM - 4:00 PM</p>
+        <p><strong>📍 Location:</strong> Local High School Computer Lab</p>
+        <p><strong>🎯 Prerequisites:</strong> None! Bring your laptop and enthusiasm.</p>
+        <p><strong>💻 What to Bring:</strong> Laptop with Chrome browser installed</p>
+      </div>
+
+      <h3>Stay Connected</h3>
+      <div style="text-align:center;margin:2rem 0;">
+        <p>Follow us for updates, coding tips, and workshop announcements!</p>
+        <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;margin-top:1rem;">
+          <a href="#" class="button" style="background:var(--primary);">GitHub</a>
+          <a href="#" class="button" style="background:var(--accent);">Instagram</a>
+          <a href="#" class="button" style="background:#1DA1F2;">Twitter</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Vibe Coders • Hosted on GitHub Pages</p>
+  </footer>
+</body>
+</html> 

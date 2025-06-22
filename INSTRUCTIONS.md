@@ -13,13 +13,14 @@
    - `about.html` – About Vibe Coders  
    - `projects.html` – Projects Showcase  
    - `contact.html` – Contact & Resources  
-   - `replit-workshop.html` – Replit Workshop  
+   - `workshops.html` – Workshops Overview
    - `cursor-workshop.html` – Cursor.dev Workshop  
-   - `windsurf.html` – Windsurf (CLI & Git) Workshop
+   - `replit-workshop.html` – Replit Workshop  
+   - `windsurf-workshop.html` – Windsurf Workshop
 
 3. **Common Layout**  
-   - **Header** with site logo/name and nav links to all seven pages.  
-   - **Footer** with copyright and “Hosted on GitHub Pages.”
+   - **Header** with site logo/name and nav links with dropdown for workshops.  
+   - **Footer** with copyright and "Hosted on GitHub Pages."
 
 4. **Ownership**  
    - Assign each student 1–2 pages; they populate content, images, and test links.
@@ -59,9 +60,10 @@ vibe-coders/
 ├── about.html
 ├── projects.html
 ├── contact.html
-├── replit-workshop.html
+├── workshops.html
 ├── cursor-workshop.html
-├── windsurf.html
+├── replit-workshop.html
+├── windsurf-workshop.html
 ├── css/
 │   └── style.css
 └── assets/
@@ -85,11 +87,16 @@ vibe-coders/
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
+      <li class="dropdown">
+        <a href="workshops.html" class="dropdown-toggle">Workshops</a>
+        <ul class="dropdown-menu">
+          <li><a href="cursor-workshop.html">Cursor.dev</a></li>
+          <li><a href="replit-workshop.html">Replit</a></li>
+          <li><a href="windsurf-workshop.html">Windsurf</a></li>
+        </ul>
+      </li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="contact.html">Contact</a></li>
-      <li><a href="replit-workshop.html">Replit</a></li>
-      <li><a href="cursor-workshop.html">Cursor.dev</a></li>
-      <li><a href="windsurf.html">Windsurf</a></li>
     </ul>
   </nav>
 </header>
@@ -113,7 +120,7 @@ vibe-coders/
 ### 5.1 Home (`index.html`)
 
 - **Hero**: full-viewport `hero-bg.jpg` or CSS gradient  
-  - Title: “Welcome to Vibe Coders Workshops”  
+  - Title: "Welcome to Vibe Coders Workshops"  
   - Subtitle + CTA buttons to each workshop page
 
 - **Workshop Cards** (Grid of 3)
@@ -179,7 +186,7 @@ vibe-coders/
   ```html
   <iframe src="https://replit.com/@…?embed=true" height="400"></iframe>
   ```
-- **Exercise**: fork, edit “Hello, Vibe Coders!”, share link
+- **Exercise**: fork, edit "Hello, Vibe Coders!", share link
 
 ---
 
@@ -191,17 +198,17 @@ vibe-coders/
 
 ---
 
-### 5.7 Windsurf Workshop (`windsurf.html`)
+### 5.7 Windsurf Workshop (`windsurf-workshop.html`)
 
-- **Intro**: “CLI for Git & GitHub Pages”  
+- **Intro**: "CLI for Git & GitHub Pages"  
 - **Git Basics**:
   ```bash
-  windsurf init
-  windsurf add .
-  windsurf commit -m "Update workshop page"
-  windsurf publish
+  git init
+  git add .
+  git commit -m "Update workshop page"
+  git push
   ```
-- **Exercise**: edit your page, run `windsurf publish`, verify live
+- **Exercise**: edit your page, commit and push, verify live on GitHub Pages
 
 ---
 
@@ -257,5 +264,5 @@ body {
 ## 7. Assets & Versioning
 
 - Place all images/icons in `assets/` (optimize to ≤ 200 KB each).  
-- Commit behind descriptive PRs (e.g. “Add About page timeline”).  
+- Commit behind descriptive PRs (e.g. "Add About page timeline").  
 - Review & merge as a team, then push to `main/` for live updates.
