@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Vibe Coders</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        .our-story {
+            padding: 4rem 2rem;
+            background: #fff;
+        }
+        .story-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .story-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2rem;
+            flex: 1 1 0;
+            text-align: left;
+        }
+        .story-image {
+            width: 400px;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+            align-self: center;
+        }
+        .core-values {
+            padding: 4rem 2rem;
+            background: var(--bg-light);
+        }
+        .values-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        .value-card {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+        .value-card:hover {
+            transform: translateY(-5px);
+        }
+        .value-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+        .timeline {
+            padding: 4rem 2rem;
+            background: #fff;
+            overflow-x: auto;
+        }
+        .timeline-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            padding: 2rem 0;
+        }
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: var(--primary);
+            transform: translateY(-50%);
+        }
+        .timeline-items {
+            display: flex;
+            gap: 3rem;
+            padding: 0 2rem;
+        }
+        .timeline-item {
+            flex: 0 0 250px;
+            text-align: center;
+            position: relative;
+        }
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            background: var(--accent);
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+        .timeline-content {
+            background: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin-top: 1rem;
+        }
+        @media (min-width: 900px) {
+            .story-content {
+                flex-direction: row;
+                align-items: center;
+            }
+            .story-text {
+                flex: 1 1 0;
+                text-align: left;
+            }
+            .story-image {
+                margin-left: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="logo">Vibe Coders</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="replit-workshop.html">Replit</a></li>
+                <li><a href="cursor-workshop.html">Cursor.dev</a></li>
+                <li><a href="windsurf.html">Windsurf</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="our-story">
+            <div class="story-content">
+                <div class="story-text">
+                    <div>
+                        <h2>Our Story</h2>
+                        <p>Vibe Coders began as a small group of passionate developers who shared a common vision: to create a welcoming space where coding enthusiasts could learn, grow, and collaborate. What started as informal meetups in local coffee shops has blossomed into a vibrant community of learners and mentors.</p>
+                    </div>
+                    <div>
+                        <p>Today, we're proud to offer structured workshops and hands-on learning experiences that combine the best of modern development tools. Our journey has taught us that the best way to learn coding is through practical experience and community support, which is why we've built our platform around these core principles.</p>
+                    </div>
+                </div>
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Vibe Coders team collaborating" class="story-image">
+            </div>
+        </section>
+
+        <section class="core-values">
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h3>Collaboration</h3>
+                    <p>We believe in the power of working together. Through pair programming and group projects, we foster an environment where knowledge sharing and teamwork thrive.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h3>Creativity</h3>
+                    <p>Innovation is at our core. We encourage thinking outside the box and exploring new solutions to coding challenges, making learning both fun and effective.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">👥</div>
+                    <h3>Community</h3>
+                    <p>Our strength lies in our diverse community. We support each other's growth and celebrate achievements together, creating lasting connections.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline">
+            <div class="timeline-container">
+                <div class="timeline-items">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2023</h4>
+                            <p>First meetup with 10 members</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2024</h4>
+                            <p>Launched Replit workshops</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2024</h4>
+                            <p>Added Cursor.dev integration</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>2025</h4>
+                            <p>Community reaches 100+ members</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Vibe Coders • Hosted on GitHub Pages</p>
+    </footer>
+</body>
+</html> 
