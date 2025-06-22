@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workshops - Vibe Coders</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <style>
+    .workshops-section {
+      max-width: 1100px;
+      margin: 3rem auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      padding: 2.5rem 2rem;
+    }
+    .workshop-list {
+      margin-bottom: 3rem;
+    }
+    .workshop-title {
+      color: var(--primary);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+    .features-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: var(--bg-light);
+      border-radius: 6px;
+      padding: 1.2rem 1rem;
+      box-shadow: 0 2px 8px rgba(90,103,216,0.04);
+    }
+    .feature-icon {
+      font-size: 2rem;
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+    .screenshot {
+      margin: 2.5rem 0 2rem 0;
+      text-align: center;
+    }
+    .screenshot img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+      border: 1px solid #e2e8f0;
+    }
+    .exercise {
+      background: var(--bg-light);
+      border-radius: 6px;
+      padding: 1.5rem 1rem;
+      margin-top: 2.5rem;
+      box-shadow: 0 2px 8px rgba(237,100,166,0.06);
+    }
+    @media (min-width: 700px) {
+      .features-list {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">Vibe Coders</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="workshops.html" class="dropdown-toggle">Workshops</a>
+          <ul class="dropdown-menu">
+            <li><a href="cursor-workshop.html">Cursor.dev</a></li>
+            <li><a href="replit-workshop.html">Replit</a></li>
+            <li><a href="windsurf-workshop.html">Windsurf</a></li>
+          </ul>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="workshops-section workshop-list">
+      <h1 class="workshop-title">Workshops</h1>
+      <p style="font-size:1.2rem;margin-bottom:3rem;">Explore our hands-on coding workshops designed for high school students. Each workshop focuses on practical skills and collaborative learning.</p>
+
+      <div class="features-list">
+        <div class="feature">
+          <span class="feature-icon">🖱️</span>
+          <div>
+            <h3><a href="cursor-workshop.html" style="color:var(--primary);text-decoration:none;">Cursor.dev Workshop</a></h3>
+            <p>Learn collaborative coding with real-time editing, live preview, and seamless Git integration.</p>
+            <a href="cursor-workshop.html" class="button" style="margin-top:1rem;">Start Workshop</a>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">⚡</span>
+          <div>
+            <h3><a href="replit-workshop.html" style="color:var(--primary);text-decoration:none;">Replit Workshop</a></h3>
+            <p>Spin up live code in seconds with Replit's cloud-based development environment.</p>
+            <a href="replit-workshop.html" class="button" style="margin-top:1rem;">Start Workshop</a>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🌊</span>
+          <div>
+            <h3><a href="windsurf-workshop.html" style="color:var(--primary);text-decoration:none;">Windsurf Workshop</a></h3>
+            <p>Master Git, GitHub, and deployment workflows with Windsurf CLI tools.</p>
+            <a href="windsurf-workshop.html" class="button" style="margin-top:1rem;">Start Workshop</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2025 Vibe Coders • Hosted on GitHub Pages</p>
+  </footer>
+</body>
+</html> 

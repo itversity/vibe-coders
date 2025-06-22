@@ -7,6 +7,17 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <div class="preloader">
+    <div class="loader-content">
+      <div class="logo-loader">Vibe Coders</div>
+      <div class="code-animation">
+        <div class="code-line"></div>
+        <div class="code-line"></div>
+        <div class="code-line"></div>
+      </div>
+      <div class="loading-text">Loading Awesome Stuff...</div>
+    </div>
+  </div>
   <header class="site-header">
     <div class="logo">Vibe Coders</div>
     <nav>
@@ -28,6 +39,7 @@
   </header>
   <main>
     <section class="hero">
+      <div class="hero-bg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('assets/hero-bg.jpg'); background-size: cover; background-position: center; opacity: 0.15;"></div>
       <div class="hero-content">
         <h1>Welcome to Vibe Coders Workshops</h1>
         <p>Learn, build, and collaborate with hands-on coding workshops for high schoolers.</p>
@@ -35,18 +47,11 @@
           <a href="workshops.html" class="button">Explore Workshops</a>
         </div>
       </div>
-      <div class="hero-wave">
-        <svg viewBox="0 0 1440 100" width="100%" height="100" preserveAspectRatio="none">
-          <path d="M0,0 C480,100 960,0 1440,100 L1440,100 L0,100 Z" fill="#fff"/>
-        </svg>
-      </div>
     </section>
   </main>
   <footer class="site-footer">
     <p>© 2025 Vibe Coders • Hosted on GitHub Pages</p>
-    <div class="social-icons">
-      <!-- Social icons go here -->
-    </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 </html> 
