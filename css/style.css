@@ -496,4 +496,323 @@ nav a:hover::after {
     font-size: 0.9rem;
     padding: var(--spacing-xs) var(--spacing-sm);
   }
+}
+
+/* Project Cards */
+.project-list {
+  padding: 2rem 0;
+}
+
+.card {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image-link {
+  display: block;
+  overflow: hidden;
+}
+
+.card-image-link:hover img {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #eee;
+  transition: transform 0.3s ease;
+}
+
+.card-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h4 {
+  margin: 0 0 0.75rem 0;
+  color: var(--primary);
+  font-size: 1.25rem;
+}
+
+.card p {
+  margin: 0 0 1.5rem 0;
+  color: var(--text-dark);
+  flex-grow: 1;
+}
+
+.card .button {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+/* Lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.lightbox:target {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-content {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  animation: lightbox-fade 0.3s ease;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: 1;
+  transition: background 0.2s;
+}
+
+.lightbox-close:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.lightbox-caption {
+  padding: 1.5rem;
+}
+
+.lightbox-caption h3 {
+  color: var(--primary);
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.lightbox-caption p {
+  margin: 0 0 1.5rem 0;
+  color: var(--text-dark);
+}
+
+@keyframes lightbox-fade {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .project-list {
+    gap: 1.5rem;
+  }
+  
+  .card img {
+    height: 180px;
+  }
+
+  .lightbox {
+    padding: 1rem;
+  }
+
+  .lightbox-content {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+}
+
+/* Workshop Page Styles */
+.workshop-content {
+  padding: 2rem 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro-text h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.feature-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.feature-list li {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.workshop-logo {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.repl-section {
+  margin: 3rem 0;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.repl-section h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.repl-container {
+  margin: 1.5rem 0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.repl-frame {
+  width: 100%;
+  border: none;
+  background: #fff;
+}
+
+.exercise-section {
+  margin: 3rem 0;
+}
+
+.exercise-card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.exercise-card h3 {
+  color: var(--primary);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.exercise-steps {
+  margin: 1.5rem 0;
+  padding-left: 1.5rem;
+}
+
+.exercise-steps li {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.exercise-tips {
+  background: var(--bg-light);
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin-top: 2rem;
+}
+
+.exercise-tips h4 {
+  color: var(--accent);
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+
+.exercise-tips ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.exercise-tips li {
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive adjustments for workshop page */
+@media (min-width: 768px) {
+  .intro-section {
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+  }
+  
+  .workshop-logo {
+    margin: 0;
+  }
+}
+
+/* Dropdown Navigation Styles */
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  min-width: 180px;
+  z-index: 10;
+  padding: 0.5rem 0;
+  border-radius: 6px;
+}
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+  display: block;
+}
+.dropdown-menu li {
+  display: block;
+}
+.dropdown-menu a {
+  display: block;
+  padding: 0.5rem 1.2rem;
+  color: var(--primary);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.dropdown-menu a:hover {
+  background: var(--accent);
+  color: #fff;
 } 
